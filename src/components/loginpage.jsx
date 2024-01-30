@@ -1,3 +1,4 @@
+import './loginpage.css';
 import React, { useState } from 'react';
 
 function Loginpage() {
@@ -19,11 +20,11 @@ function Loginpage() {
   };
 
   return (
-    <div className="login-page">
+    <div className="login-page-container">
       <h1>Log In</h1>
-      <form onSubmit={handleLoginSubmit}>
+      <form className='login-page-form' onSubmit={handleLoginSubmit}>
         <label htmlFor="username">Username/Email:</label>
-        <input
+        <input className='login-page-input'
           type="text"
           id="username"
           name="username"
@@ -32,7 +33,7 @@ function Loginpage() {
           required
         />
         <label htmlFor="password">Password:</label>
-        <input
+        <input className='login-page-input'
           type="password"
           id="password"
           name="password"
@@ -40,7 +41,7 @@ function Loginpage() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-        <button type="submit">Log In</button>
+        <button className='login-page-button'  type="submit">Log In</button>
       </form>
       {errorMessage && <p className="error-message">{errorMessage}</p>}
     </div>

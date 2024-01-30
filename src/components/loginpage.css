@@ -1,0 +1,57 @@
+/* General styling for the login page container */
+:root {
+    background-color: #0a032e;
+  }
+  
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #498610;
+  padding: 20px;
+}
+
+/* Styling for the heading */
+.login-page-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form */
+.login-page-form {
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Styling for input fields */
+.login-page-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* Styling for the button */
+.login-page-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Styling for the error message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
